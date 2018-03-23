@@ -12,7 +12,8 @@ This scripts will simply run the `run_db_restore.php` script in each of the spec
 - Populate the `instances.txt` with the full path of each instance that you want the database restore helper to include.
 Each instance path should be on a separate line and should not include a trailing slash.
 See `instances.example.txt` file for a sample.
-- Run the restore script using 
+- Run the restore script using
+
 ```
 php run_restore.php
 ```
