@@ -19,3 +19,5 @@ foreach ($instances as $instance) {
     $import_script = $instance.DIRECTORY_SEPARATOR."db_restore".DIRECTORY_SEPARATOR."run_db_restore.php";
     shell_exec("php $import_script");
 }
+
+echo "Done.\n";
