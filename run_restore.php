@@ -7,7 +7,7 @@ if (!file_exists('instances.txt')) {
 
 $contents = file_get_contents('instances.txt');
 
-$instances = explode("\n", $contents);
+$instances = preg_split("/\r\n|\n|\r/", $contents);
 
 foreach ($instances as $instance) {
     $instance = trim($instance);
